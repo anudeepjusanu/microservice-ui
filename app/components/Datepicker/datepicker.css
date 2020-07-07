@@ -1,0 +1,99 @@
+.picker {
+  position: relative;
+}
+
+.datepicker {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.calendar {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: 0.3s;
+  z-index: 90000;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  background-color: #d9d9d9;
+  padding: 10px 0;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconContainer {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.month {
+  padding: 0 15px;
+}
+
+.Theader {
+  height: 30px;
+}
+
+.cell {
+  border-radius: 3px;
+  height: 30px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cell:hover {
+  background-color: #0077b3;
+  border-color: #800;
+}
+
+.cell.active {
+  background-color: #0077b3;
+  border-color: #800;
+}
+.date-label {
+  padding: 10px;
+  background-color: #d9d9d9;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.holiday {
+  color: #d9d9d9;
+}
+
+.selectedDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-label {
+  justify-content: space-between !important;
+}
+
+.calenderGrid {
+  background-color: white;
+}
+
+.picker-icon {
+  font-size: "20px";
+  margin: "3px 5px";
+}
+.todayDate {
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.isDisabled input {
+  background-color: #ef1717;
+}
+.row1 {
+  width: 140px;
+}
+
+label {
+  width: 180px;
+  font-size: 14px;
+}
+
+.colmn-3 {
+  margin-left: 15px;
+}

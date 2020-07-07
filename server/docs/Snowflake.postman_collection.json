@@ -1,0 +1,1576 @@
+{
+	"info": {
+		"_postman_id": "57e1def1-2de3-4151-bd7e-b3bf17008034",
+		"name": "Snowflake",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Golden Account",
+			"item": [
+				{
+					"name": "Golden Account - tier list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/tierList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"tierList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - Strategic Importance list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/strategicImportanceList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"strategicImportanceList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - Countries List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/getCountriesList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"getCountriesList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - Regions List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/getRegionsList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"getRegionsList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - Classification Types List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/getClassificationTypesList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"getClassificationTypesList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - Classification Values List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/getClassificationValuesList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"getClassificationValuesList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - Channel Grouping Parents List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/getChannelGroupingParentsList?searchText=test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"getChannelGroupingParentsList"
+							],
+							"query": [
+								{
+									"key": "searchText",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - Industry Codes List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/getIndustryCodesList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"getIndustryCodesList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - T3 Master Identifiers List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/getT3MasterIdentifiersList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"getT3MasterIdentifiersList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - Transaction Types List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/getTransactionTypesList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"getTransactionTypesList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - Get search meta data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/searchFormMetaData",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"searchFormMetaData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Golden Account - Get search Form",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/goldenAccount/searchForm?accountName=Best buy&accountNumber=&logitechAccountId=&classificationType&classificationValue&zymeId&validZymeId&validZymeBusinessName&channelGroupingParent&industryCode&tier=2&strategicImportance=11&erpCountryCD&region&t3MasterIdentifier&orderField=LOGITECH_ACCOUNT_ID&orderAsc=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"goldenAccount",
+								"searchForm"
+							],
+							"query": [
+								{
+									"key": "accountName",
+									"value": "Best buy"
+								},
+								{
+									"key": "accountNumber",
+									"value": ""
+								},
+								{
+									"key": "logitechAccountId",
+									"value": ""
+								},
+								{
+									"key": "classificationType",
+									"value": null
+								},
+								{
+									"key": "classificationValue",
+									"value": null
+								},
+								{
+									"key": "zymeId",
+									"value": null
+								},
+								{
+									"key": "validZymeId",
+									"value": null
+								},
+								{
+									"key": "validZymeBusinessName",
+									"value": null
+								},
+								{
+									"key": "channelGroupingParent",
+									"value": null
+								},
+								{
+									"key": "industryCode",
+									"value": null
+								},
+								{
+									"key": "tier",
+									"value": "2"
+								},
+								{
+									"key": "strategicImportance",
+									"value": "11"
+								},
+								{
+									"key": "erpCountryCD",
+									"value": null
+								},
+								{
+									"key": "region",
+									"value": null
+								},
+								{
+									"key": "t3MasterIdentifier",
+									"value": null
+								},
+								{
+									"key": "orderField",
+									"value": "LOGITECH_ACCOUNT_ID",
+									"description": "default: LOGITECH_ACCOUNT_ID"
+								},
+								{
+									"key": "orderAsc",
+									"value": "ASC",
+									"description": "default: ASC: accept only ASC/DESC"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Get Golden Account Information",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/goldenAccount?goldenAccountId=10000000655297",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"goldenAccount"
+							],
+							"query": [
+								{
+									"key": "goldenAccountId",
+									"value": "10000000655297"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Recent Account Changes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/recentAccountChanges?goldenAccountId=10000028357698",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"recentAccountChanges"
+							],
+							"query": [
+								{
+									"key": "goldenAccountId",
+									"value": "10000028357698"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Xref Golden Accounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/xrefGoldenAccounts?goldenAccountId=10000000655297",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"xrefGoldenAccounts"
+							],
+							"query": [
+								{
+									"key": "goldenAccountId",
+									"value": "10000000655297"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Xref Golden Account Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/xrefGoldenAccountInfo?logitechAccountId=A10001641",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"xrefGoldenAccountInfo"
+							],
+							"query": [
+								{
+									"key": "logitechAccountId",
+									"value": "A10001641"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Xref Golden Account Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/xrefGoldenAccountSearch?accountNumber=&logitechAccountId&validZymeId&goldenAccountName=best&validZymeBusinessName&countryCode&orderField=&orderAsc=ASC&page=1&limit=25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"xrefGoldenAccountSearch"
+							],
+							"query": [
+								{
+									"key": "accountNumber",
+									"value": "",
+									"description": "optional"
+								},
+								{
+									"key": "logitechAccountId",
+									"value": null,
+									"description": "optional"
+								},
+								{
+									"key": "validZymeId",
+									"value": null,
+									"description": "optional"
+								},
+								{
+									"key": "goldenAccountName",
+									"value": "best",
+									"description": "optional"
+								},
+								{
+									"key": "validZymeBusinessName",
+									"value": null,
+									"description": "optional"
+								},
+								{
+									"key": "countryCode",
+									"value": null,
+									"description": "optional"
+								},
+								{
+									"key": "orderField",
+									"value": "",
+									"description": "optional"
+								},
+								{
+									"key": "orderAsc",
+									"value": "ASC",
+									"description": "optional"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "optional"
+								},
+								{
+									"key": "limit",
+									"value": "25",
+									"description": "optional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Re-Assign customer account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ACCOUNT_IDS\": [\n        \"6344\",\n        \"156310\"\n    ],\n    \"CURRENT_GOLDEN_ACCOUNT_ID\" : \"10000000655297\",\n    \"NEW_GOLDEN_ACCOUNT_ID\" : \"10000000655297\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/requestReassignXrefAccounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"requestReassignXrefAccounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Xref Account Sites",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/xrefAccountSites?goldenAccountId=10000028086550&orderField=&orderAsc=ASC&page=1&limit=25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"xrefAccountSites"
+							],
+							"query": [
+								{
+									"key": "goldenAccountId",
+									"value": "10000028086550",
+									"description": "Required"
+								},
+								{
+									"key": "orderField",
+									"value": "",
+									"description": "optional, Default: ACCOUNT_SITE_USE_ID"
+								},
+								{
+									"key": "orderAsc",
+									"value": "ASC",
+									"description": "optional, Default: ASC"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "optional, Default: 1"
+								},
+								{
+									"key": "limit",
+									"value": "25",
+									"description": "Optional, Default: 25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Xref Account Site Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/xrefAccountSiteInfo?ACCOUNT_SITE_USE_ID=2865479",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"xrefAccountSiteInfo"
+							],
+							"query": [
+								{
+									"key": "ACCOUNT_SITE_USE_ID",
+									"value": "2865479",
+									"description": "Required"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Account Classification",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/accountClassification?goldenAccountId=10000000655297&orderField=ACCOUNT_SITE_USE_ID&orderAsc=ASC&page=1&limit=25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"accountClassification"
+							],
+							"query": [
+								{
+									"key": "goldenAccountId",
+									"value": "10000000655297",
+									"description": "Required"
+								},
+								{
+									"key": "orderField",
+									"value": "ACCOUNT_SITE_USE_ID",
+									"description": "optional, Default: ACCOUNT_SITE_USE_ID"
+								},
+								{
+									"key": "orderAsc",
+									"value": "ASC",
+									"description": "optional, Default: ASC"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "optional, Default: 1"
+								},
+								{
+									"key": "limit",
+									"value": "25",
+									"description": "Optional, Default: 25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reporting",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/reporting?goldenAccountId=10000000655297&orderField=ACCOUNT_SITE_USE_ID&orderAsc=ASC&page=1&limit=25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"reporting"
+							],
+							"query": [
+								{
+									"key": "goldenAccountId",
+									"value": "10000000655297",
+									"description": "Required"
+								},
+								{
+									"key": "orderField",
+									"value": "ACCOUNT_SITE_USE_ID",
+									"description": "optional, Default: ACCOUNT_SITE_USE_ID"
+								},
+								{
+									"key": "orderAsc",
+									"value": "ASC",
+									"description": "optional, Default: ASC"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "optional, Default: 1"
+								},
+								{
+									"key": "limit",
+									"value": "25",
+									"description": "Optional, Default: 25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Golden Account Contacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/goldenAccountContacts?goldenAccountId=116228000755144&orderField=&orderAsc=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"goldenAccountContacts"
+							],
+							"query": [
+								{
+									"key": "goldenAccountId",
+									"value": "116228000755144",
+									"description": "Required"
+								},
+								{
+									"key": "orderField",
+									"value": "",
+									"description": "optional, default: FIRST_NAME"
+								},
+								{
+									"key": "orderAsc",
+									"value": "ASC",
+									"description": "optional"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Search Golden Account Contacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/searchGoldenAccountContacts?goldenAccountId=116228000755144&employeeID=&firstName=Milutin&lastName=&middleName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"searchGoldenAccountContacts"
+							],
+							"query": [
+								{
+									"key": "goldenAccountId",
+									"value": "116228000755144",
+									"description": "Required"
+								},
+								{
+									"key": "employeeID",
+									"value": ""
+								},
+								{
+									"key": "firstName",
+									"value": "Milutin"
+								},
+								{
+									"key": "lastName",
+									"value": ""
+								},
+								{
+									"key": "middleName",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new account contact",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"FIRST_NAME\": \"Adrian\",\n\t\"MIDDLE_NAME\": \"\",\n\t\"LAST_NAME\": \"Ramseier\",\n\t\"CONTACT_TYPE\": \"INTERNAL\",\n\t\"STATUS\": \"\",\n\t\"EMPLOYEE_ID\": \"\",\n\t\"EMPLOYEE_TYPE\": \"\",\n\t\"JOB_TITLE\": \"Account Manager\",\n\t\"EMAIL_ADDRESS\": \"\",\n\t\"PHONE_NO\": \"\",\n\t\"COLLECTOR_FLAG\": \"\",\n\t\"SALES_REP_FLAG\": \"\",\n\t\"EFF_START_DATE\": \"1900-01-01\",\n\t\"EFF_END_DATE\": \"2100-12-31\",\n\t\"ISREJECTED\": \"\",\n\t\"ISAPPROVED\": \"\",\n\t\"SUBMITTED_BY\": \"\",\n\t\"SUBMITTED_DATE\": \"\",\n\t\"SUBMITTED_COMMENT\": \"\",\n\t\"SOURCE_SYSTEM_REFERENCE_TYPE\": \"\",\n\t\"SOURCE_SYSTEM_REFERENCE\": \"\",\n\t\"SOURCE_SYSTEM_NAME\": \"\",\n\t\"MANAGER_FLAG\": \"\",\n\t\"CUSTOMER_CONTACTS_PKEY\": \"\",\n\t\"GOLDEN_ACCOUNT_ID\": \"10000028469664\",\n\t\"CURRENT_VERSION_FLAG\": \"\",\n\t\"ACTION_TYPE\": \"\",\n\t\"LOGITECH_ACCOUNT_ID\": \"\",\n\t\"PRIMARY_MANAGER_FLAG\": \"\",\n\t\"CREATED_BY\": \"ADMIN\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/addNewContact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"addNewContact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Golden Account Attributes By GoldenAccountId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/goldenAccountAttributesByGoldenAccountId?goldenAccountId=10000000655297&attributeName=ACCOUNT_NUMBER",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"goldenAccountAttributesByGoldenAccountId"
+							],
+							"query": [
+								{
+									"key": "goldenAccountId",
+									"value": "10000000655297"
+								},
+								{
+									"key": "attributeName",
+									"value": "ACCOUNT_NUMBER"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Golden Account Attribute ChangeHistory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/goldenAccountAttributeChangeHistory?goldenAccountId=10000000655297&attributeName=ACCOUNT_NUMBER",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"goldenAccountAttributeChangeHistory"
+							],
+							"query": [
+								{
+									"key": "goldenAccountId",
+									"value": "10000000655297"
+								},
+								{
+									"key": "attributeName",
+									"value": "ACCOUNT_NUMBER"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Golden Account Attribute value",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"ATTRIBUTE\" : \"ACCOUNT_NAME\",\n\t\"GOLDEN_ACCOUNT_ID\" : \"10000000655297\",\n\t\"CURRENTVALUE\" : \"BEST BUY 001\",\n\t\"NEWVALUE\" : \"BEST BUY 002\",\n\t\"SUBMITTED_BY\" : \"SUPERADMIN\",\n\t\"SUBMITTED_COMMENT\" : \"TESTING\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/requestUpdateGoldenAccountAttribute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"requestUpdateGoldenAccountAttribute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Account Contact Info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"CONTACT_ID\": \"117298000773024\",\n\t\"FIRST_NAME\": \"DANKA\",\n\t\"MIDDLE_NAME\": \"PRAH\",\n\t\"LAST_NAME\": \"\",\n\t\"CONTACT_TYPE\": \"\",\n\t\"STATUS\": \"\",\n\t\"EMPLOYEE_ID\": \"\",\n\t\"EMPLOYEE_TYPE\": \"\",\n\t\"JOB_TITLE\": \"ACCOUNT MANAGER\",\n\t\"EMAIL_ADDRESS\": \"\",\n\t\"PHONE_NO\": \"\",\n\t\"COLLECTOR_FLAG\": \"\",\n\t\"SALES_REP_FLAG\": \"\",\n\t\"EFF_START_DATE\": \"1900-01-01\",\n\t\"EFF_END_DATE\": \"2018-12-31\",\n\t\"SUBMITTED_BY\": \"\",\n\t\"SUBMITTED_DATE\": \"\",\n\t\"SUBMITTED_COMMENT\": \"\",\n\t\"SOURCE_SYSTEM_REFERENCE_TYPE\": \"\",\n\t\"SOURCE_SYSTEM_REFERENCE\": \"\",\n\t\"SOURCE_SYSTEM_NAME\": \"\",\n\t\"MANAGER_FLAG\": \"Y\",\n\t\"CUSTOMER_CONTACTS_PKEY\": \"\",\n\t\"GOLDEN_ACCOUNT_ID\": \"\",\n\t\"LOGITECH_ACCOUNT_ID\": \"\",\n\t\"PRIMARY_MANAGER_FLAG\": \"\",\n\t\"CREATED_BY\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/requestUpdateGoldenAccountContact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"requestUpdateGoldenAccountContact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Golden Account Own Flag value",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"ACCOUNT_ID\" : \"1093332\",\n\t\"CURRENTVALUE\" : \"Y\",\n\t\"NEWVALUE\" : \"N\",\n\t\"SUBMITTED_BY\" : \"SUPERADMIN\",\n\t\"SUBMITTED_COMMENT\" : \"TESTING\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/requestUpdateGoldenAccountOwnFlagValue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"requestUpdateGoldenAccountOwnFlagValue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Channel Grouping Parent / Logitech party name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/searchLogitechPartyName?searchText=PFH Technology",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"searchLogitechPartyName"
+							],
+							"query": [
+								{
+									"key": "searchText",
+									"value": "PFH Technology",
+									"description": "Required"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request approve for LOVs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"GOLDEN_ACCOUNT_ATTR_TYPE_NAME\" : \"STRATEGIC_IMPORTANCE\",\n\t\"NEWVALUE\" : \"TEST2006\",\n\t\"STARTDATE\" : \"1900-01-01\",\n\t\"ENDDATE\" : \"2100-12-31\",\n\t\"SUBMITTED_COMMENT\" : \"TESTING\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/account/requestApproveForListOfValues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"requestApproveForListOfValues"
+							]
+						},
+						"description": "STARTDATE & ENDDATE format must like Y-m-d (2100-12-31)"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Approval",
+			"item": [
+				{
+					"name": "Get Attributes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/attributes?page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"attributes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "optional, Default: 1"
+								},
+								{
+									"key": "limit",
+									"value": "20",
+									"description": "Optional, Default: 20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Pending Attributes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"PKEYS\": [\n        \"20339\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/approvePendingAttributes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"approvePendingAttributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Pending Attributes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"PKEYS\" : [\n        \"20317\",\n        \"20318\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/rejectPendingAttributes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"rejectPendingAttributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pending List of Values",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/pendingListOfValues?page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"pendingListOfValues"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "optional, Default: 1"
+								},
+								{
+									"key": "limit",
+									"value": "20",
+									"description": "Optional, Default: 20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Pending List Of Values",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"PKEYS\": [\n        \"104\"\n    ],\n    \"APPROVED_COMMENT\": \"Approved For Dev\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/approvePendingListOfValues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"approvePendingListOfValues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Pending List Of Values",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"PKEYS\": [\n        \"100\",\n        \"101\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/rejectPendingListOfValues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"rejectPendingListOfValues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pending Own Flags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/pendingOwnFlags?page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"pendingOwnFlags"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "optional, Default: 1"
+								},
+								{
+									"key": "limit",
+									"value": "20",
+									"description": "Optional, Default: 20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Pending Own Flags",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"PKEYS\": [\n        \"20347\"\n    ],\n    \"APPROVED_COMMENT\": \"Approved For Dev\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/approvePendingOwnFlags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"approvePendingOwnFlags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Pending Own Flags",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"PKEYS\": [\n        \"100\",\n        \"101\"\n    ],\n    \"APPROVED_COMMENT\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/rejectPendingOwnFlags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"rejectPendingOwnFlags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pending Xref Groupings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/pendingXrefGroupings?page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"pendingXrefGroupings"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "optional, Default: 1"
+								},
+								{
+									"key": "limit",
+									"value": "20",
+									"description": "Optional, Default: 20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Pending Xref Grouping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"PKEYS\": [\n        \"22114\",\n        \"22115\"\n    ],\n    \"APPROVED_COMMENT\": \"Approved For Dev\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/approvePendingXrefGroupings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"approvePendingXrefGroupings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Pending Xref Groupings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"PKEYS\": [\n        \"100\",\n        \"101\"\n    ],\n    \"APPROVED_COMMENT\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/rejectPendingXrefGroupings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"rejectPendingXrefGroupings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pending Contacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/pendingContacts?page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"pendingContacts"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "optional, Default: 1"
+								},
+								{
+									"key": "limit",
+									"value": "20",
+									"description": "Optional, Default: 20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Pending Contacts",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"PKEYS\": [\n        \"2\"\n    ],\n    \"APPROVED_COMMENT\": \"Approved For Dev\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/approvePendingContacts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"approvePendingContacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Pending Contacts",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"PKEYS\": [\n        \"100\",\n        \"101\"\n    ],\n    \"APPROVED_COMMENT\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/approval/rejectPendingContacts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"approval",
+								"rejectPendingContacts"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,70 @@
+div.alertMsg {
+  border-radius: 0;
+  box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.5);
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  max-width: 700px;
+  min-width: 400px;
+  padding: 10px 30px 10px 25px;
+  word-break: break-word;
+  position: relative;
+}
+
+div.success {
+  background-color: #a9c264;
+  border-color: #97ae58;
+}
+
+div.success:before {
+  content: "\f058";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  left: 12px;
+  line-height: 1;
+  position: absolute;
+  top: 12px;
+}
+
+div.error {
+  background-color: #e09d90;
+  border-color: #d87c69;
+}
+
+div.error:before {
+  content: "\f057";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  left: 12px;
+  line-height: 1;
+  position: absolute;
+  top: 12px;
+}
+
+.messageBlk {
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+
+.messageBtn {
+  float: right;
+  color: #fff;
+}
+
+.rt-resizable-header-content:hover{
+  text-decoration: underline !important;
+  font-weight: 700
+}
+
+.ReactTable .rt-thead .rt-resizable-header-content{
+  font-size: inherit
+}

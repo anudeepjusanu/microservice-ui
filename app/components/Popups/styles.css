@@ -1,0 +1,29 @@
+.modal label {
+  width: 35%;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.icon-lg {
+  position: relative;
+  top: 6px;
+}
+
+.ValidationMessage {
+  position: relative;
+  left: 285px;
+  color: red;
+}
+.modal h1 {
+  font-family: Brown-Pro-Light, Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #e1e2e3;
+  color: #2f3132;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 22px 0 11px 0;
+}
+
+.helperMessage {
+  position: relative;
+  left: 300px;
+}

@@ -1,0 +1,13 @@
+.selectBox > .Dropdown-root{
+    width: 200px !important;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.selectBox input {
+    width: 120px !important;
+}
+
+.selectBox > .calendar{
+    width: 250px !important;
+}

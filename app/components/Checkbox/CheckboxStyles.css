@@ -1,0 +1,43 @@
+.rc-checkbox-input {
+  width: 18px;
+  height: 21px;
+}
+.rc-checkbox-checked .rc-checkbox-inner:after {
+  border-top-color: initial;
+  border-top-style: initial;
+  border-top-width: 0px;
+  border-right-color: gray;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-bottom-color: gray;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: initial;
+  border-left-style: initial;
+  border-left-width: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+.rc-checkbox-checked .rc-checkbox-inner {
+  background-color: #fff !important;
+}
+
+.rc-checkbox-inner {
+  border-radius: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.rc-checkbox:hover .rc-checkbox-inner,
+.rc-checkbox-input:focus + .rc-checkbox-inner {
+  border-color: gray;
+}
+
+.rc-checkbox-checked .rc-checkbox-inner:after {
+  height: 12px;
+  width: 7px;
+}

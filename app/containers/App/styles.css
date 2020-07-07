@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Brown-Pro-Bold";
+  src: url("../../fonts/lineto-brown-pro-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brown-Pro-Light";
+  src: url("../../fonts/lineto-brown-pro-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brown-Pro-Regular";
+  src: url("../../fonts/lineto-brown-pro-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+a,
+select,
+fieldset,
+input,
+button,
+select,
+textarea,
+optgroup,
+option {
+  font-family: Brown-Pro-Regular, Arial, Helvetica, sans-serif;
+}
+
+textarea.ReadOnly[readonly="readonly"],
+input.ReadOnly[readonly="readonly"],
+textarea[readonly="readonly"],
+input[readonly="readonly"] {
+  cursor: text;
+}
+input {
+  font-size: 14px;
+  height: 32px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  padding: 0 12px;
+}
+
+a,
+a:link,
+a:visited {
+  color: #00b8fc;
+  text-decoration: none;
+  cursor: pointer;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.MandatoryLabel:after {
+  content: "*";
+  color: #ff0000;
+}

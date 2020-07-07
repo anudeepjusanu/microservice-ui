@@ -1,0 +1,52 @@
+.TypeAheadDropDown {
+  position: relative;
+  font-family: Brown-Pro-Regular, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.73);
+}
+
+.TypeAheadDropDown ul::before {
+  content: "";
+}
+
+.TypeAheadDropDown ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  /* border-top: 1px solid gray; */
+}
+
+.TypeAheadDropDown li {
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+.TypeAheadDropDown li:hover {
+  background: #125f90;
+  color: #fff;
+}
+
+.App {
+  margin: 150px auto 0 auto;
+  width: 600px;
+}
+
+.suggestionsList {
+  min-width: 200px;
+  width: max-content;
+  background-color: #fff;
+  max-height: 250px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 1000;
+  max-width: 450px;
+}
+
+.clearIcon {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  right: 5px;
+  top: 5px;
+}

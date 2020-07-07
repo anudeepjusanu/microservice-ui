@@ -1,0 +1,180 @@
+import React, { useEffect, memo, useState } from "react";
+import CheckBox from "../../components/Checkbox";
+import TableWithPagination from "../../components/TableWithPagination";
+import { getAttributeData } from "../../services/pendingApprovalService";
+import { LoadingButton } from "./PendingApprovalStyles";
+
+function AttributeTable(props) {
+  const [approvalData, setApprovalData] = useState([]);
+  const [selectAll, setSelectAll] = useState(false);
+  const [checked, setChecked] = useState([]);
+  const [showLoading, setShowLoading] = useState(false);
+
+  const loadValue = () => {
+    setShowLoading(true);
+    getAttributeData().then((res) => {
+      console.log(res);
+      setApprovalData(res.data.data);
+      const selectAllVar = selectAll;
+      let checkedCopy = [];
+      res.data.data.forEach(function(e, index) {
+        e.isChecked = false;
+        checkedCopy.push(e);
+      });
+      setChecked([...checkedCopy]);
+      setSelectAll(false);
+      setShowLoading(false);
+    });
+  };
+
+  useEffect(() => {
+    loadValue();
+  }, []);
+
+  useEffect(() => {
+    if (props.loadApi) {
+      loadValue();
+    }
+  }, [props.loadApi]);
+
+  const handleChange = () => {
+    var selectall = !selectAll;
+    setSelectAll(selectall);
+    var checkedCopy = [];
+    approvalData.forEach(function(e, index) {
+      e.isChecked = selectall;
+      checkedCopy.push(e);
+    });
+    setChecked([...checkedCopy]);
+    selectedAttributes();
+  };
+
+  const handleSingleCheckboxChange = (index) => {
+    var checkedCopy = checked;
+    checkedCopy[index].isChecked = !checked[index].isChecked;
+    if (checkedCopy[index].isChecked === false) {
+      setSelectAll(false);
+    }
+    setChecked([...checkedCopy]);
+    selectedAttributes();
+  };
+
+  const selectedAttributes = () => {
+    const selectedItems = checked.filter((item) => item.isChecked);
+    props.selectedAttributes(selectedItems);
+  };
+
+  const AttributeColumns = [
+    {
+      Header: (
+        <CheckBox
+          type="checkbox"
+          onChange={() => handleChange()}
+          checked={selectAll}
+        />
+      ),
+      Cell: (row) => (
+        <CheckBox
+          checked={checked[row.index] && checked[row.index].isChecked}
+          onChange={() => handleSingleCheckboxChange(row.index)}
+        />
+      ),
+      sortable: false,
+      filterable: false,
+      width: 50,
+    },
+    {
+      Header: "Logitech Account Id",
+      accessor: "LOGITECH_ACCOUNT_ID",
+      style: { whiteSpace: "unset" },
+      minWidth: 110,
+    },
+    {
+      Header: "Golden Account Name",
+      accessor: "GOLDEN_ACCOUNT_NAME",
+      style: { whiteSpace: "unset" },
+      minWidth: 110,
+    },
+    {
+      Header: "Attribute",
+      accessor: "ATTRIBUTE",
+      style: { whiteSpace: "unset" },
+      minWidth: 80,
+    },
+    {
+      Header: "Current Value",
+      accessor: "CURRENTVALUE",
+      style: { whiteSpace: "unset" },
+      minWidth: 90,
+    },
+    {
+      Header: "New Value",
+      accessor: "NEWVALUE",
+      style: { whiteSpace: "unset" },
+      minWidth: 90,
+    },
+    {
+      Header: "Start Date",
+      accessor: "STARTDATE",
+      style: { whiteSpace: "unset" },
+      minWidth: 90,
+    },
+    {
+      Header: "End Date",
+      accessor: "ENDDATE",
+      style: { whiteSpace: "unset" },
+      minWidth: 90,
+    },
+    {
+      Header: "Submitted By",
+      accessor: "SUBMITTED_BY",
+      style: { whiteSpace: "unset" },
+      minWidth: 90,
+    },
+    {
+      Header: "Submitted On",
+      accessor: "SUBMITTED_DATE",
+      style: { whiteSpace: "unset" },
+      minWidth: 90,
+    },
+    {
+      Header: "Submitted Comment",
+      accessor: "SUBMITTED_COMMENT",
+      style: { whiteSpace: "unset" },
+      minWidth: 90,
+    },
+    {
+      Header: "Approved/Rejected Comments",
+      accessor: "APPROVED_COMMENT",
+      style: { whiteSpace: "unset" },
+      minWidth: 90,
+    },
+  ];
+
+  const sortData = (a, b) => {
+    let sort = {};
+    let order = 'DESC';
+    if(a[0].desc){
+      order = 'ASC';
+    }
+    sort.orderField = a[0].id;
+    sort.orderAsc = order;
+    getAttributeData(sort);
+  }
+
+  return (
+    <React.Fragment>
+      {showLoading && <LoadingButton>Loading...</LoadingButton>}
+      <TableWithPagination
+        columns={AttributeColumns}
+        data={approvalData}
+        paginationData={0}
+        showPagination={false}
+        sortColumn={sortData}
+      />
+      <p>{approvalData.length} records</p>
+    </React.Fragment>
+  );
+}
+
+export default AttributeTable;
