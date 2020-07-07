@@ -1,11 +1,11 @@
 {
-  "family": "di-customer-ui",
-  "executionRoleArn": "arn:aws:iam::061988265798:role/ecsTaskExecutionRole",
+  "family": "customer-ui",
+  "executionRoleArn": "arn:aws:iam::100856825839:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "containerDefinitions": [
     {
-      "name": "di-customer-ui-microservice",
-      "image": "061988265798.dkr.ecr.us-west-2.amazonaws.com/di-customer-ui:latest",
+      "name": "microservice-ui",
+      "image": "100856825839.dkr.ecr.us-east-2.amazonaws.com/microservice-ui:latest",
       "portMappings": [
         {
           "containerPort": 3000,
@@ -17,6 +17,6 @@
     }
   ],
   "requiresCompatibilities": ["FARGATE"],
-  "cpu": "2048",
-  "memory": "4096"
+  "cpu": "512",
+  "memory": "1024"
 }
