@@ -7,5 +7,7 @@ WORKDIR /app
 COPY package.json ./
 
 RUN npm i --silent
+
+EXPOSE 3000
 RUN npm run build
-CMD [ "npm", "run", "start:prod" ]
+ENTRYPOINT npm run start:prod
