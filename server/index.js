@@ -57,7 +57,7 @@ app.use(
   })
 ); //parsing request queries
 // Setting up request headers to support Angular applications
-app.use(v1_base_path, express.static("public"));
+app.use(v1_base_path, express.static("build"));
 
 app.use(
   cors({
