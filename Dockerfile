@@ -1,11 +1,14 @@
 FROM node:10
 MAINTAINER Anudeep
+RUN mkdir /app
+#RUN npm i
+ADD . /app
 WORKDIR /app
+COPY package.json ./
+ADD internals/ ./
 
-ADD package.json /app
-ADD internals/ /app
-RUN npm install
-COPY . /app
+RUN npm i --silent
+
 EXPOSE 3000
 RUN npm run build
 ENTRYPOINT npm run start:prod
