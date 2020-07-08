@@ -1,14 +1,7 @@
-FROM node:10
-MAINTAINER Anudeep
-RUN mkdir /app
-#RUN npm i
-ADD . /app
-WORKDIR /app
-COPY package.json ./
-ADD internals/ ./
-
-RUN npm i --silent
-
+FROM node
+ADD /package.json /tmp/package.json
+WORKDIR /tmp
+ADD . /tmp/
+RUN npm install
 EXPOSE 3000
-RUN npm run build
-ENTRYPOINT npm run start:prod
+ENTRYPOINT npm run start:production
